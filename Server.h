@@ -8,7 +8,18 @@
 #ifndef SERVER_H_
 #define SERVER_H_
 
-
+#include <iostream>
+#include <sys/socket.h>  // The header file socket.h includes a number of definitions of structures needed for sockets.
+#include <netinet/in.h>  // The header file in.h contains constants and structures needed for internet domain addresses.
+#include <pthread.h>
+#include <thread>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include<signal.h>
+#include <sstream>
+#include "commands.h"
 using namespace std;
 
 // edit your ClientHandler interface here:
@@ -19,7 +30,7 @@ class ClientHandler{
 
 
 // you can add helper classes here and implement on the cpp file
-
+class Socket : public
 
 // edit your AnomalyDetectionHandler class here
 class AnomalyDetectionHandler:public ClientHandler{
