@@ -8,18 +8,11 @@
 #ifndef SERVER_H_
 #define SERVER_H_
 
-#include <iostream>
-#include <sys/socket.h>  // The header file socket.h includes a number of definitions of structures needed for sockets.
-#include <netinet/in.h>  // The header file in.h contains constants and structures needed for internet domain addresses.
-#include <pthread.h>
+
 #include <thread>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include<signal.h>
-#include <sstream>
-#include "commands.h"
+#include <sys/socket.h>
+#include "CLI.h"
+
 using namespace std;
 
 // edit your ClientHandler interface here:
@@ -28,15 +21,44 @@ class ClientHandler{
     virtual void handle(int clientID)=0;
 };
 
+class SocketIO: public DefaultIO {
+    int clientID;
+public:
+    virtual string read(){
+        string s="";
+        char curr = 0;
+        while (curr != '\n') {
+            recv(clientID, &curr, 1, 0);
+            s += curr;
+        }
+        return s;
+    }
+    virtual void write(string text) {
+
+    }
+    virtual void write(float f){
+
+    }
+    virtual void read(float* f){
+        recv(clientID, f, sizeof(float*) , 0);
+    }
+
+    SocketIO(int id) {
+        clientID = id;
+    }
+};
 
 // you can add helper classes here and implement on the cpp file
-class Socket : public
+
 
 // edit your AnomalyDetectionHandler class here
 class AnomalyDetectionHandler:public ClientHandler{
 	public:
     virtual void handle(int clientID){
-
+        SocketIO sio(clientID);
+        CLI cli(&sio);
+        cli.start();
+        // do we need to close the sio? if we need members then we do need
     }
 };
 
