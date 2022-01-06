@@ -11,8 +11,14 @@
 
 #include <thread>
 #include <sys/socket.h>
+#include <netinet/in.h>
 #include "CLI.h"
-
+#include <signal.h>
+#include <sstream>
+#include <pthread.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 using namespace std;
 
 // edit your ClientHandler interface here:
@@ -66,7 +72,10 @@ class AnomalyDetectionHandler:public ClientHandler{
 // implement on Server.cpp
 class Server {
 	thread* t; // the thread to run the start() method in
-
+    int socketFd;
+    sockaddr_in serverAddr;
+    sockaddr_in clientAddr;
+    int in_procces;
 	// you may add data members
 
 public:
@@ -74,6 +83,12 @@ public:
 	virtual ~Server();
 	void start(ClientHandler& ch)throw(const char*);
 	void stop();
+    static void signal_handler(int signal_num)
+    {
+        cout << "The interrupt signal is (" << signal_num
+             << "). \n";
+
+    }
 };
 
 #endif /* SERVER_H_ */
