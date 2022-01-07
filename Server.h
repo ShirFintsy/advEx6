@@ -9,6 +9,8 @@
 #define SERVER_H_
 
 
+#include <thread>
+
 using namespace std;
 
 // edit your ClientHandler interface here:
@@ -34,7 +36,7 @@ class AnomalyDetectionHandler:public ClientHandler{
 class Server {
 	thread* t; // the thread to run the start() method in
 
-	// you may add data members
+	
 
 public:
 	Server(int port) throw (const char*);
