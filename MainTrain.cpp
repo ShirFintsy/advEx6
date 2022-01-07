@@ -1,7 +1,7 @@
 /*
  * run2.cpp
  *
- *  Created on: 8 áãöî× 2019
+ *  Created on: 8 ï¿½ï¿½ï¿½ï¿½ï¿½ 2019
  *      Author: Eli
  */
 
@@ -34,7 +34,7 @@ string readStr(int serverFD){
 	string serverInput="";
 	char c=0;
 	read(serverFD,&c,sizeof(char));
-	while(c!='\n'){				
+	while(c!='\n'){
 		serverInput+=c;
 		read(serverFD,&c,sizeof(char));
 	}
