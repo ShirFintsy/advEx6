@@ -36,7 +36,7 @@ class AnomalyDetectionHandler:public ClientHandler{
 class Server {
 	thread* t; // the thread to run the start() method in
 
-	
+
 
 public:
 	Server(int port) throw (const char*);
