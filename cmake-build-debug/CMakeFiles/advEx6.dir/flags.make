@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/shir/CLionProjects/advEx6/.
 
-CXX_FLAGS = -g -std=gnu++14
+CXX_FLAGS =  -pthread -g -std=gnu++14
 
