@@ -34,7 +34,7 @@ string readStr(int serverFD){
 	string serverInput="";
 	char c=0;
 	read(serverFD,&c,sizeof(char));
-	while(c!='\n'){				
+	while(c!='\n'){
 		serverInput+=c;
 		read(serverFD,&c,sizeof(char));
 	}

@@ -18,10 +18,10 @@ Server::Server(int port)throw (const char*) {
 
 void Server::start(ClientHandler& ch)throw(const char*){
     t = new thread([&ch, this](){
-        //signal(SIGALRM,signal_handler); /// what is signal_handler? what is SIGALRM?
+        signal(SIGALRM,signal_handler);
         while(!in_procces){
             socklen_t clientSize=sizeof(clientAddr);
-            //alarm(1);
+            alarm(1);
             int aClient = accept(socketFd,(struct sockaddr*)&clientAddr,&clientSize);
             if(aClient>0){
                 //new thread([&aClient,this,&ch](){
@@ -29,18 +29,17 @@ void Server::start(ClientHandler& ch)throw(const char*){
                 close(aClient);
                 //});
             }
-            //alarm(0);
-        }close(socketFd);
+            alarm(0);
+        }
     });
 }
 void Server::stop(){
     in_procces = true;
     t->join(); // do not delete this!
-    //close(socketFd);
+    close(socketFd);
 }
 
 
 Server::~Server() {
-    delete t;
 }
 
