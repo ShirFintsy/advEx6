@@ -200,16 +200,16 @@ public:
             clientEnds.push_back(range[1]);
             p++;
         }
-        dio->write("Upload complete\n");
+        dio->write("Upload complete.\n");
 
         int FP=0, TP=0;
         for (SerialTimeStep time: info->stp){
             int flag = 0;
             for (int i = 0; i < clientEnds.size(); i++) {
                 if ((clientBegins[i] <= time.end && clientEnds[i] >= time.end) ||
-                (clientBegins[i] <= time.start && clientEnds[i] >= time.start) ||
-                (clientBegins[i] <= time.start && clientEnds[i] >= time.end) ||
-                (clientBegins[i] >= time.start && clientEnds[i] <= time.end)) {
+                    (clientBegins[i] <= time.start && clientEnds[i] >= time.start) ||
+                    (clientBegins[i] <= time.start && clientEnds[i] >= time.end) ||
+                    (clientBegins[i] >= time.start && clientEnds[i] <= time.end)) {
                     TP++;
                     flag = 1;
                     break;
@@ -227,12 +227,16 @@ public:
         falseAlarm = (floor(falseAlarm * 1000)) / 1000;
 
         dio->write("True Positive Rate: ");
-        dio->write(positiveRate);
+        string pos = to_string(positiveRate);
+        pos.erase ( pos.find_last_not_of('0') + 1, string::npos );
+        dio->write(pos);
         dio->write("\n");
         dio->write("False Positive Rate: ");
-        dio-> write(falseAlarm);
+        string fal = to_string(falseAlarm);
+        fal.erase ( fal.find_last_not_of('0') + 1, string::npos );
+        dio-> write(fal);
         dio->write("\n");
-        
+
     }
 };
 class Exit:public Command {

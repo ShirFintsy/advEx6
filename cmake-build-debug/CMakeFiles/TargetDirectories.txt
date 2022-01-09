@@ -1,0 +1,3 @@
+/home/shir/CLionProjects/advEx6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shir/CLionProjects/advEx6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/shir/CLionProjects/advEx6/cmake-build-debug/CMakeFiles/advEx6.dir

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="advEx6"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/shir/CLionProjects/advEx6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/shir/CLionProjects/advEx6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/shir/CLionProjects/advEx6/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="advEx6">
+				<Option output="/home/shir/CLionProjects/advEx6/cmake-build-debug/advEx6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shir/CLionProjects/advEx6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 advEx6"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="advEx6/fast">
+				<Option output="/home/shir/CLionProjects/advEx6/cmake-build-debug/advEx6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shir/CLionProjects/advEx6/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 advEx6/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shir/CLionProjects/advEx6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/shir/CLionProjects/advEx6/AnomalyDetector.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/CLI.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/CLI.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/HybridAnomalyDetector.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/HybridAnomalyDetector.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/MainTrain.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/Server.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/Server.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/SimpleAnomalyDetector.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/SimpleAnomalyDetector.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/anomaly_detection_util.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/anomaly_detection_util.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/commands.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/minCircle.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/minCircle.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/timeseries.cpp">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/timeseries.h">
+			<Option target="advEx6"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/advEx6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

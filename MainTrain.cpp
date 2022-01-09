@@ -1,7 +1,7 @@
 /*
  * run2.cpp
  *
- *  Created on: 8 áãöî× 2019
+ *  Created on: 8 ï¿½ï¿½ï¿½ï¿½ï¿½ 2019
  *      Author: Eli
  */
 
@@ -155,8 +155,8 @@ size_t check(string outputFile,string expectedOutputFile){
 int main(){
 	srand (time(NULL));
 	int port=5000+ rand() % 1000;		
-	string outputFile1="output_menu";
-	string outputFile2="output";
+	string outputFile1="/home/shir/CLionProjects/advEx6/output_menu";
+	string outputFile2="/home/shir/CLionProjects/advEx6/output";
 	int x=rand() % 1000;
 	outputFile1+=to_string(x);
 	outputFile1+=".txt";
